@@ -15,7 +15,7 @@ In this lab we will cover how to iterate through an ArrayList of Java Objects us
 ### Sample Output
 Some facts about my favorite sea creatures:
 * Blue Whales have a size of 90 feet and are blue-gray in color.
-* Starfish have a size of 40 inches and are orange in color.
-* Anglerfish have a size of 1 foot and are black in color.
+* Starfish have a size of 3.33 feet and are orange in color.
+* Anglerfish have a size of 1.1 feet and are black in color.
 * Bottlenose Dolphins have a size of 8.9 feet and are gray in color.
 ---
