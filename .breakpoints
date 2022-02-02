@@ -1,0 +1,20 @@
+{
+  "files": {
+    "src/main/jte/seaCreature.jte": [
+      {
+        "id": "273b4c56-4dd8-401e-9554-121644e45455",
+        "line": 6,
+        "version": 3,
+        "index": 31
+      }
+    ],
+    "src/main/jte/seaCreatures.jte": [
+      {
+        "id": "eff45f28-ce15-49f2-8b2c-d1b8a5f5d430",
+        "line": 11,
+        "version": 1,
+        "index": 145
+      }
+    ]
+  }
+}
