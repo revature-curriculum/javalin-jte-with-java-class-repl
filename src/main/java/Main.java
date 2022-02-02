@@ -16,13 +16,15 @@ public class Main {
         
         Javalin app = Javalin.create().start(4100);
 
-        app.get("/", itemHandler);
+        app.get("/", ctx -> ctx.render("index.jte"));
+
+        app.get("/shoppingList", shoppingHandler);
 
     }
 
-    public static Handler itemHandler = ctx -> {
+    public static Handler shoppingHandler = ctx -> {
         
-        ctx.render("index.jte", Collections.singletonMap("items", items));
+        ctx.render("shoppingList.jte", Collections.singletonMap("items", items));
 
     };
 

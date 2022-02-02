@@ -6,7 +6,6 @@
 </head>
 <body>
 
-<a href="/shoppingList">Shopping List</a>
 
 </body>
 </html>
