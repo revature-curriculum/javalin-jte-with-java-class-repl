@@ -1,4 +1,4 @@
-## Javalin JTE with Java Class
+## JTE with Java Classes 2: ArrayList
 ---
 ### Description
 In this lab we will cover how to iterate through an ArrayList of Java Objects using JTE.
