@@ -1,6 +1,6 @@
-@import java.util.*;
-@import objects.SeaCreature;
-@param ArrayList<SeaCreature> seaCreatures;
+@import java.util.*
+@import objects.SeaCreature
+@param ArrayList<SeaCreature> seaCreatures
 
 <html lang="en">
 
