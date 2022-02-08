@@ -1,13 +1,14 @@
 import io.javalin.Javalin;
 import java.util.*;
 import io.javalin.http.Handler;
+import objects.SeaCreature;
 import objects.ShoppingItem;
 
 public class Main {
 
     static ArrayList<ShoppingItem> items = new ArrayList<>();
 
-    //TO-DO create array
+    static ArrayList<SeaCreature> seaCreatures = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -16,7 +17,10 @@ public class Main {
         items.add(new ShoppingItem("Shirt", 30.0f));
         items.add(new ShoppingItem("Pants", 35.0f));
 
-        // TO-DO add to your array
+        seaCreatures.add(new SeaCreature("Blobfish", 1.0f, "pink"));
+        seaCreatures.add(new SeaCreature("Sea Angel", 0.16f, "green-cyan"));
+        seaCreatures.add(new SeaCreature("Peacock Mantis Shrimp", 0.5f, "orange"));
+        seaCreatures.add(new SeaCreature("Firefly Squid", 0.25f, "brownish-red"));
         
         Javalin app = Javalin.create().start(4100);
 
@@ -24,7 +28,7 @@ public class Main {
 
         app.get("/shoppingList", shoppingHandler);
 
-        // TO-DO create route
+        app.get("/seaCreatures", scHandler);
 
     }
 
@@ -34,6 +38,9 @@ public class Main {
 
     };
 
-  // TO-DO create handler
+    public static Handler scHandler = ctx -> {
+      ctx.render("seaCreature.jte",
+      Collections.singletonMap("seaCreatures", seaCreatures));
+    };
 
 }

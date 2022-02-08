@@ -1,4 +1,6 @@
-
+@import java.util.*;
+@import objects.SeaCreature;
+@param ArrayList<SeaCreature> seaCreatures;
 
 <html lang="en">
 
@@ -8,7 +10,10 @@
 
 <body>
 
-
+  Some facts about my favorite sea creatures:
+    @for(SeaCreature seaCreature : seaCreatures)
+      <li>${seaCreature.getName()} have a size of ${seaCreature.getSize()} feet and are ${seaCreature.getColor()} in color</li>
+    @endfor
 
 </body>
 
