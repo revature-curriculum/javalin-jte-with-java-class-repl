@@ -39,7 +39,7 @@ public class Main {
     };
 
     public static Handler scHandler = ctx -> {
-      ctx.render("seaCreature.jte",
+      ctx.render("seaCreatures.jte",
       Collections.singletonMap("seaCreatures", seaCreatures));
     };
 
